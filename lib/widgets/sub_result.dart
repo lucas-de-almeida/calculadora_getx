@@ -4,8 +4,8 @@ class SubResult extends StatelessWidget {
   final String text;
 
   const SubResult({
-    Key key,
-    this.text,
+    Key? key,
+    required this.text,
   }) : super(key: key);
   @override
   Widget build(BuildContext context) {

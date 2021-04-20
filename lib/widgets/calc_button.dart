@@ -8,12 +8,12 @@ class CalculatorButton extends StatelessWidget {
   final Function onPressed;
 
   CalculatorButton({
-    Key key,
+    Key? key,
     bgColor,
     this.big = false,
-    this.text,
-    this.onPressed,
-  })  : this.bgColor = bgColor ?? Color(0xff333333),
+    required this.text,
+    required this.onPressed,
+  })   : this.bgColor = bgColor ?? Color(0xff333333),
         super(key: key);
 
   @override
